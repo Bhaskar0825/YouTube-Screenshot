@@ -1,0 +1,59 @@
+body {
+  width: 300px;
+  padding: 20px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#downloadimage {
+  background-color: #209978;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#downloadimage:hover {
+  background-color: #17795E;
+}
+
+#copyButton {
+  background-color: teal;
+  color: #fff;
+}
+
+#copyButton:hover {
+  background-color: #006363;
+}
+
+#copyButton .text,
+#downloadimage .button__text {
+  flex: 1;
+  text-align: center;
+}
+
+#copyButton .svgIcon,
+#downloadimage .button__icon {
+  background-color: #17795E;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s;
+}
+
+#downloadimage .button__icon svg,
+#copyButton .svgIcon svg {
+  fill: #fff;
+  width: 20px;
+}
